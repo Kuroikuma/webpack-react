@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  position: relative;
+  height: 100vh;
+  min-width: 98.7vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  padding: 5px 1rem 5px 1rem;
+  color: white;
+  z-index: 10;
+  background-color: #00bcd4;
+}
+.container {
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+  background-color: #f00;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: all 1s ease-in-out;
+}
+.container.container-visibility {
+  opacity: 1;
+  transform: none;
+}
+h1 {
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
